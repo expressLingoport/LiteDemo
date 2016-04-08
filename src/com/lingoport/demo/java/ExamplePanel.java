@@ -97,6 +97,7 @@ public class ExamplePanel extends JPanel {
     public void createButtons() {
 
         ImageIcon nextButtonIcon = ImageHelper.createImageIcon("images/next.jpg");
+        ImageIcon nextButtonIcon2 = ImageHelper.createImageIcon("images/next.jpg");
         nextButton_ = new JButton( nextButtonIcon);
         nextButton_.setToolTipText("Next & Clear");
         nextButton_.addActionListener(new ActionListener() {
@@ -176,7 +177,7 @@ public class ExamplePanel extends JPanel {
          									+
          									" for Today: ");
         datePanel_.setBorder(tb);
-        datePanel_.setToolTipText("Displays today's date and time.");
+        datePanel_.setToolTipText("Displays today's date & time.");
 
         JLabel dateLabel = new JLabel("Today's Date:");       
 
@@ -239,12 +240,15 @@ public class ExamplePanel extends JPanel {
                                            I18nUtils.getString("EXAM_ADDRESS_1"));
         infoPanel_.setBorder(tb);
         infoPanel_.setToolTipText(I18nUtils.getString("EXAM_DISPLAY_2"));
+        String unUsedString = "Hello World";
 
         JLabel nameLabel = new JLabel(I18nUtils.getString("EXAM_NAME_3"));
         JLabel streetLabel = new JLabel(I18nUtils.getString("EXAM_STREET_4"));
         JLabel apartmentLabel = new JLabel(I18nUtils.getString("EXAM_APARTME_5"));
+        
         JLabel cityLabel = new JLabel(I18nUtils.getString("EXAM_CITY_6"));
         JLabel zipLabel = new JLabel(I18nUtils.getString("EXAM_ZIPCODE_7"));
+
         JLabel phoneLabel = new JLabel("Phone:");
         JLabel emailLabel = new JLabel("Email:");
 

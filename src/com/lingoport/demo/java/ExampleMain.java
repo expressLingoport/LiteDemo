@@ -52,7 +52,8 @@ public class ExampleMain {
         frame.pack();
         frame.setVisible(true);
         String strTitle = "Example Address Book -- " + locale;
-        frame.setTitle(strTitle);
+        String strTitle2 = "Example Address Books -- " + strTitle;
+        frame.setTitle(strTitle2);
     }
 
 }
