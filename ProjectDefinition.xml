@@ -3,15 +3,15 @@
      is preserved -->
 <gzproject>
   <login>
-    <username>demo@lingoport.com</username>
-    <password>REPLACEABLE_PASSWORD_TOKEN</password>
+    <username>ecrawford@lingoport.com</username>
+    <password>legomaneddie17</password>
     <server>http://www.globalyzer.com/gzserver</server>
   </login>
 
-  <project-path>/var/lib/jenkins/jobs/Lingoport.Lite/workspace</project-path>
+  <project-path>/home/lingoadmin/workspace/LiteDemo</project-path>
   <project-name>Lingoport.Lite</project-name>
 
-  <report-path>/home/jenkins/Lingoport_Data/Dashboard/Projects/Lingoport.Lite/GlobalyzerScans</report-path>
+  <report-path>/home/lingoadmin/workspace/reports/GlobalyzerScans</report-path>
   <report-type>ScanDetailedXML</report-type>
 
   <scans>
@@ -19,7 +19,7 @@
       <!-- create and execute a single scan with this info -->
       <scan-name>Java</scan-name>
       <ruleset-name>Java Rule Set</ruleset-name>
-      <ruleset-owner>demo@lingoport.com</ruleset-owner>
+      <ruleset-owner>ecrawford@lingoport.com</ruleset-owner>
       <!-- Scans all files by default. Uncomment the following 
            to scan only specific directories and files -->
       <!--

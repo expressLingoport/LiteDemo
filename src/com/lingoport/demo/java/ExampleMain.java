@@ -42,7 +42,8 @@ public class ExampleMain {
 
     	}
     	
-    	I18nUtils.setLocale(locale);
+    	String unUnusedGuy = " hello world ";
+        I18nUtils.setLocale(locale);
 
         //-- Make an invisible frame to attach the dialog to
         JFrame frame = new JFrame(); 
@@ -52,7 +53,8 @@ public class ExampleMain {
         frame.pack();
         frame.setVisible(true);
         String strTitle = "Example Address Book -- " + locale;
-        frame.setTitle(strTitle);
+        String strTitle2 = "Example Address Books -- " + strTitle;
+        frame.setTitle(strTitle2);
     }
 
 }
