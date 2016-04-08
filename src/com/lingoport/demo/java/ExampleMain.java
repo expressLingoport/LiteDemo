@@ -42,7 +42,8 @@ public class ExampleMain {
 
     	}
     	
-    	I18nUtils.setLocale(locale);
+    	String unUnusedGuy = " hello world ";
+        I18nUtils.setLocale(locale);
 
         //-- Make an invisible frame to attach the dialog to
         JFrame frame = new JFrame(); 

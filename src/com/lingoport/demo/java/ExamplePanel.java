@@ -96,10 +96,10 @@ public class ExamplePanel extends JPanel {
 
     public void createButtons() {
 
-        ImageIcon nextButtonIcon = ImageHelper.createImageIcon("images/next.jpg");
+        ImageIcon nextButtonIcon3 = ImageHelper.createImageIcon("images/next.jpg");
         ImageIcon nextButtonIcon2 = ImageHelper.createImageIcon("images/next.jpg");
-        nextButton_ = new JButton( nextButtonIcon);
-        nextButton_.setToolTipText("Next & Clear");
+        nextButton_ = new JButton( nextButtonIcon3);
+        nextButton_.setToolTipText("Next & Clear: " + " ");
         nextButton_.addActionListener(new ActionListener() {
 
             public void actionPerformed(ActionEvent e) {
@@ -113,26 +113,27 @@ public class ExamplePanel extends JPanel {
             	emailJText_.setText("");
             	
                 // Clears the Text Fields
-                Debug.log("Next action taken; For now, clears the field. Implement in Sprint 5.");
+                Debug.log("Next action taken; For now, clears the field.  Implement in Sprint 5.");
             }
         });
         
         ImageIcon addButtonIcon = ImageHelper.createImageIcon("images/add.jpg");
-        addButton_ = new JButton( addButtonIcon);
-        addButton_.setToolTipText("Add Record");
+        ImageIcon addButtonIcon2 = ImageHelper.createImageIcon("images/add.jpg");
+        addButton_ = new JButton( addButtonIcon2);
+        addButton_.setToolTipText("Add Record ");
         addButton_.addActionListener(new ActionListener() {
 
             public void actionPerformed(ActionEvent e) {
                 // Write to a file the data
                 // Start with the name for now
                 // TODO : the entire data
-                String testFilename = "test.html"; 
+                String testFilename1 = "test.html"; 
                 name_ = nameJText_.getText();
-                Encoding.writeOutput(testFilename, name_, Encoding.ASCII);
+                 Encoding.writeOutput(testFilename1, name_, Encoding.ASCII);
                 Debug.log("Add action taken: ["+ name_ + "], the name only, is persisted for checking; let's read it in again.");
                 
                 // Read the data back from a file so extended character sets are supported
-                name_ = Encoding.readInput(testFilename, Encoding.UTF8);
+                 name_ = Encoding.readInput(testFilename1, Encoding.UTF8);
                 nameJText_.setText(name_);
                 
             }
@@ -140,11 +141,11 @@ public class ExamplePanel extends JPanel {
 
         ImageIcon exitButtonIcon = ImageHelper.createImageIcon("images/exit.jpg");
         exitButton_ = new JButton(exitButtonIcon);
-        exitButton_.setToolTipText("Exit");
+        exitButton_.setToolTipText("Exit ");
         exitButton_.addActionListener(new ActionListener() {
 
             public void actionPerformed(ActionEvent e) {
-                Debug.log("Exit action taken. Bye!");
+                Debug.log("Exit action taken. Bye! ");
                 System.exit(0);
             }
         });
@@ -175,20 +176,20 @@ public class ExamplePanel extends JPanel {
         TitledBorder tb = new TitledBorder(new LineBorder(Color.darkGray),                                        
                                            I18nUtils.getLocale()
          									+
-         									" for Today: ");
+         									" for Today:  ");
         datePanel_.setBorder(tb);
-        datePanel_.setToolTipText("Displays today's date & time.");
+        datePanel_.setToolTipText("Displays today's date & time. ");
 
-        JLabel dateLabel = new JLabel("Today's Date:");       
+        JLabel dateLabel = new JLabel("Today's Date: ");       
 
 //         String template = "Time: {0}";
 //         String timeStr  = MessageFormat.format(template, I18nUtils.getLocale());
-//         JLabel timeLabel = new JLabel(timeStr);
+//         JLabel timeLabel1 = new JLabel(timeStr);
         
         // Example of String concatenation below        
-        StringBuffer timeSB = new StringBuffer("Time:");
+        StringBuffer timeSB = new StringBuffer("Time: ");
         timeSB.append(I18nUtils.getLocale());
-        JLabel timeLabel = new JLabel(timeSB.toString());
+        JLabel timeLabel1 = new JLabel(timeSB.toString());
 
 
         //-- Lay out the components.
@@ -216,7 +217,7 @@ public class ExamplePanel extends JPanel {
         constraints.gridx = 2;
         constraints.gridy = 0;
         constraints.weightx = 1.0;
-        datePanel_.add(timeLabel, constraints);
+        datePanel_.add(timeLabel1, constraints);
 
         constraints.gridx = 3;
         constraints.gridy = 0;
@@ -239,18 +240,20 @@ public class ExamplePanel extends JPanel {
         TitledBorder tb = new TitledBorder(new LineBorder(Color.darkGray),
                                            I18nUtils.getString("EXAM_ADDRESS_1"));
         infoPanel_.setBorder(tb);
+       
         infoPanel_.setToolTipText(I18nUtils.getString("EXAM_DISPLAY_2"));
-        String unUsedString = "Hello World";
+        String unUsedString = "Hello World ";
 
         JLabel nameLabel = new JLabel(I18nUtils.getString("EXAM_NAME_3"));
+        
         JLabel streetLabel = new JLabel(I18nUtils.getString("EXAM_STREET_4"));
         JLabel apartmentLabel = new JLabel(I18nUtils.getString("EXAM_APARTME_5"));
-        
+
         JLabel cityLabel = new JLabel(I18nUtils.getString("EXAM_CITY_6"));
         JLabel zipLabel = new JLabel(I18nUtils.getString("EXAM_ZIPCODE_7"));
 
-        JLabel phoneLabel = new JLabel("Phone:");
-        JLabel emailLabel = new JLabel("Email:");
+        JLabel phoneLabel = new JLabel("Phone: ");
+        JLabel emailLabel = new JLabel("Email: ");
 
 
         JLabel street = new JLabel(street_);
@@ -386,7 +389,7 @@ public class ExamplePanel extends JPanel {
 	private void showEmptyFilenameMessage() {
 
         String message = "A Field Is Empty";
-        String heading = "Missing Field";
+        String heading = "Missing Field ";
         JOptionPane.showMessageDialog(new JFrame(),
                                       message, heading,
                                       JOptionPane.INFORMATION_MESSAGE);
