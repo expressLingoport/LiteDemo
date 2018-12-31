@@ -1,4 +1,4 @@
 # LiteDemo
-A very simple project to show off Globalyzer Lite
+A very simple project to show off Globalyzer in IDE's
 
-This is for Sparta!!!
+A number of i18n issues are to be identified by Globalyzer, some of which have the refactored code as a comment above the issue.
