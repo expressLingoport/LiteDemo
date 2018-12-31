@@ -16,8 +16,8 @@ public class ExampleMain {
     public static void main(String[] args){
     	
     	// Parse the locale if given as an argument
-    	// if should be given in the form fr_FR or en_US
-    	// of de_DE_Pseudo with a variant
+    	// if should be given in the form fr or en
+    	// of eo with a variant
     	// (simplistic argument parsing)
     	Locale locale = new Locale("en", "US"); // $NON-NLS-L$
     	if (args.length > 0) {
@@ -34,7 +34,13 @@ public class ExampleMain {
         			Locale candidateLocale = new Locale(localeStr[0], localeStr[1]);
         			locale = candidateLocale;
         		} catch (Exception ex) {
+        			try {
+        			  Locale candidateLocale = new Locale(localeStr[0]);
+        			  locale = candidateLocale;
+        			} catch (Exception ex2)	 {
+
         			// If bad, just continue with the default locale
+        		    }
         		}			
 
 
