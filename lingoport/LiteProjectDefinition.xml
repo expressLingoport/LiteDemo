@@ -40,7 +40,6 @@
         <end-ignore>GLOBALYZER_END_IGNORE</end-ignore>
       </comments>
       <scan-items>
-        <item>java</item>
       </scan-items>
     </scan>
   </scans>
