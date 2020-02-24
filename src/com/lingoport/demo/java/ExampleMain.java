@@ -57,7 +57,7 @@ public class ExampleMain {
         frame.getContentPane().add(panel);
         frame.pack();
         frame.setVisible(true);
-        String strTitle = "Example Address Book -- " + locale;
+        String strTitle = "Address Book -- " + locale;
         frame.setTitle(strTitle);
     }
 

@@ -210,7 +210,8 @@ public class ExamplePanel extends JPanel {
         
         // Fix the code by adding a locale, here French, which really should come from a Locale framework
         // datePanel_.add(new JLabel(DateFormat.getDateInstance(DateFormat.FULL, I18nUtils.getLocale()).format(today_)), constraints); // $NON-NLS-L$ 
-        datePanel_.add(new JLabel(DateFormat.getDateInstance(DateFormat.FULL).format(today_)), constraints); 
+        // datePanel_.add(new JLabel(DateFormat.getDateInstance(DateFormat.FULL).format(today_)), constraints); 
+        datePanel_.add(new JLabel("TODO: ADD DATE"));
 
         constraints.gridx = 2;
         constraints.gridy = 0;
