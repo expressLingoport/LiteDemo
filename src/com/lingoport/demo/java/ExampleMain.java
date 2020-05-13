@@ -49,6 +49,7 @@ public class ExampleMain {
     	}
     	
     	I18nUtils.setLocale(locale);
+    	// I18nUtils.setLocale(locale); // $NON-NLS-L$
 
         //-- Make an invisible frame to attach the dialog to
         JFrame frame = new JFrame(); 
@@ -57,7 +58,8 @@ public class ExampleMain {
         frame.getContentPane().add(panel);
         frame.pack();
         frame.setVisible(true);
-        String strTitle = "Address Book -- " + locale;
+        String strTitle = "Address Book";
+        // String strTitle = I18nUtils.getString("EXAM_ADDRESS_BOOK");
         frame.setTitle(strTitle);
     }
 
