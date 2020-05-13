@@ -68,7 +68,7 @@ public class ExamplePanel extends JPanel {
 
     int counter_ = 0;
 
-    @SuppressWarnings("rawtypes")
+    @SuppressWarnings("rawtypes") // $NON-NLS-L$
 	ArrayList addresses = new ArrayList(10);
 
 
@@ -209,9 +209,9 @@ public class ExamplePanel extends JPanel {
         constraints.weightx = 0.0;
         
         // Fix the code by adding a locale, here French, which really should come from a Locale framework
-        // datePanel_.add(new JLabel(DateFormat.getDateInstance(DateFormat.FULL, I18nUtils.getLocale()).format(today_)), constraints); // $NON-NLS-L$ 
+         datePanel_.add(new JLabel(DateFormat.getDateInstance(DateFormat.FULL, I18nUtils.getLocale()).format(today_)), constraints); // $NON-NLS-L$ 
         // datePanel_.add(new JLabel(DateFormat.getDateInstance(DateFormat.FULL).format(today_)), constraints); 
-        datePanel_.add(new JLabel("TODO: ADD DATE"));
+        // datePanel_.add(new JLabel("TODO: ADD DATE"));
 
         constraints.gridx = 2;
         constraints.gridy = 0;
@@ -383,7 +383,7 @@ public class ExamplePanel extends JPanel {
 	private void showEmptyFilenameMessage() {
 
         String message = "A Field Is Empty";
-        String heading = "Missing Field";
+        String heading = "Missing Field"; // $NON-NLS-L$
         JOptionPane.showMessageDialog(new JFrame(),
                                       message, heading,
                                       JOptionPane.INFORMATION_MESSAGE);
