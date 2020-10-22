@@ -14,6 +14,9 @@ import com.lingoport.demo.java.utils.I18nUtils;
 public class ExampleMain {
 	
     public static void main(String[] args){
+	    
+	    String first ="First string";
+	    first.concat("second string");
     	
     	// Parse the locale if given as an argument
     	// if should be given in the form fr or en
