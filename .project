@@ -10,8 +10,14 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
+		<buildCommand>
+			<name>com.lingoport.globalyzer.client.ui.plugin.scanExecutorBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>com.lingoport.globalyzer.client.ui.plugin.scanExecutorNature</nature>
 	</natures>
 </projectDescription>
