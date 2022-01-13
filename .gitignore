@@ -2,4 +2,5 @@
 .classpath
 .project
 globalyzer-lite-reports/JavaScan_detailed_report.xml
+src/module-info.java
 /bin/
