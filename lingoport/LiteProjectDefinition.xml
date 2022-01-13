@@ -4,8 +4,8 @@
   <login>
     <username></username>
     <password></password>
-    <server>http://lingoport.net:9090/gzserver</server>
-    <use-local-rulesets>true</use-local-rulesets>
+    <server>https://www.globalyzer.com/gzserver</server>
+    <use-local-rulesets>false</use-local-rulesets>
     <optional>
       <proxy-user></proxy-user>
       <proxy-password></proxy-password>
@@ -13,19 +13,22 @@
       <proxy-port></proxy-port>
     </optional>
   </login>
-  <project-path>C:/Users/Olivier/git/sandbox-1</project-path>
-  <project-name>Lingoport.sandbox</project-name>
+  <project-path>C:/Users/Olivier/git/LiteDemo</project-path>
+  <project-name>CET.LiteDemo</project-name>
   <report-path>globalyzer-lite-reports</report-path>
   <report-type>ScanDetailedXML</report-type>
-  <data-dictionary-location>C:/Users/Olivier/.globalyzer-6.0.7</data-dictionary-location>
+  <report-priorities>C,1,2</report-priorities>
+  <data-dictionary-location></data-dictionary-location>
   <filter-with-dictionary>true</filter-with-dictionary>
   <scan-timeout>120</scan-timeout>
-  <generate-partial-results>false</generate-partial-results>
+  <generate-partial-results>true</generate-partial-results>
+  <save-history>false</save-history>
   <scans>
     <scan>
       <scan-name>Java Scan</scan-name>
-      <ruleset-name>Java Sandbox</ruleset-name>
+      <ruleset-name>6.0 Java</ruleset-name>
       <ruleset-owner>olibouban@lingoport.com</ruleset-owner>
+      <use-machine-learning>true</use-machine-learning>
       <encoding>systemDefault</encoding>
       <checks>
         <embedded-strings>true</embedded-strings>
@@ -40,6 +43,7 @@
         <end-ignore>GLOBALYZER_END_IGNORE</end-ignore>
       </comments>
       <scan-items>
+        <item></item>
       </scan-items>
     </scan>
   </scans>
