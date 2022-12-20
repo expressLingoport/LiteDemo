@@ -61,7 +61,7 @@ public class ExampleMain {
         frame.getContentPane().add(panel);
         frame.pack();
         frame.setVisible(true);
-        String strTitle = "Address Book";
+        String strTitle = I18nUtils.getString("EXAM_ADDRESS_BOOK");
         // String strTitle = I18nUtils.getString("EXAM_ADDRESS_BOOK");
         frame.setTitle(strTitle);
     }
