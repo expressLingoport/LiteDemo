@@ -225,7 +225,7 @@ public class ExamplePanel extends JPanel {
         // Fix the code by adding a locale, here French, which really should come from a Locale framework
         // datePanel_.add(new JLabel(DateFormat.getTimeInstance(DateFormat.DEFAULT, I18nUtils.getLocale()).format(time_)), constraints); // $NON-NLS-L$ 
 
-        datePanel_.add(new JLabel(DateFormat.getTimeInstance(DateFormat.DEFAULT).format(time_)), constraints);
+        datePanel_.add(new JLabel(DateFormat.getTimeInstance(DateFormat.DEFAULT, I18nUtils.getLocale()).format(time_)), constraints);
     }
 
 
